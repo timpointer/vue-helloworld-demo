@@ -2,7 +2,7 @@
   <div id="app">
     <NavMenu msg="nav menu"/>
     <SearchForm msg="search form"/>
-    <Table msg="Welcome to Your Vue.js App"/>
+    <Table v-bind:tableData="listData" msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -17,7 +17,29 @@ export default {
     NavMenu,
     SearchForm,
     Table
-  }
+  },
+   data() {
+        return {
+          listData: [{
+            date: '2016-05-02',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1518 弄'
+          }, {
+            date: '2016-05-04',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1517 弄'
+          }, {
+            date: '2016-05-01',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1519 弄'
+          }, {
+            date: '2016-05-03',
+            name: '王小虎',
+            address: '上海市普陀区金沙江路 1516 弄'
+          }]
+        }
+      }
+  
 }
 </script>
 
