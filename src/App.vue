@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <NavMenu msg="nav menu"/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <Table msg="Welcome to Your Vue.js App"/>
 
@@ -8,12 +8,14 @@
 </template>
 
 <script>
+import NavMenu from './components/NavMenu.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Table from './components/Table.vue'
 
 export default {
   name: 'app',
   components: {
+    NavMenu,
     HelloWorld,
     Table
   }
