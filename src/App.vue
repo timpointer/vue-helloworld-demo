@@ -1,22 +1,21 @@
 <template>
   <div id="app">
     <NavMenu msg="nav menu"/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SearchForm msg="search form"/>
     <Table msg="Welcome to Your Vue.js App"/>
-
   </div>
 </template>
 
 <script>
 import NavMenu from './components/NavMenu.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import SearchForm from './components/SearchForm.vue'
 import Table from './components/Table.vue'
 
 export default {
   name: 'app',
   components: {
     NavMenu,
-    HelloWorld,
+    SearchForm,
     Table
   }
 }
